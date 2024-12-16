@@ -7,7 +7,8 @@ const { deleteUser } = require('src/resolvers/gql-mutations/users/delete-user-mu
 
 const userResolver = {
   Query: {
-    getUser: getUser,
+    getUserById: getUser,
+    getUserByEmail: getUser,
     getUsers: getAllUsers,
   },
   Mutation: {

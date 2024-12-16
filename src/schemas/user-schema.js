@@ -8,7 +8,8 @@ const userSchema = gql`
   }
 
   type Query {
-    getUser(id: ID!): User
+    getUserById(id: ID!): User
+    getUserByEmail(email: String!): User
     getUsers: [User]
   }
 
