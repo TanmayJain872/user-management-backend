@@ -4,7 +4,8 @@
   "description": "This is a basic user management system's backend application.",
   "main": "server.js",
   "scripts": {
-    "test": "mocha --timeout 10000  "
+    "test": "mocha 'test/**/*.test.js' --timeout 10000 --reporter spec"
+    
   },
   "author": "Tanmay Jain",
   "license": "ISC",

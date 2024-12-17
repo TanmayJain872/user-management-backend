@@ -4,7 +4,7 @@ const chai = require('chai');
 const { expect } = chai;
 const request = require('supertest');
 const sinon = require('sinon');
-const app = require('../../../../server'); // Your Express app
+const app = require('../../../../server.js'); // Your Express app
 const User = require('../../../../src/models/User.js');
 
 describe('updateUser Mutation', () => {
