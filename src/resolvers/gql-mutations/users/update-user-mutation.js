@@ -2,6 +2,10 @@ import bcrypt from 'bcryptjs';
 import User from '../../../models/User.js';
 
 export const updateUser = async (_, { id, name, email, password }) => {
+    const user = await User.findById(id);
+    if (!user) {
+        throw new Error("User not found");
+    }
     const data = {
         name,
         email,
